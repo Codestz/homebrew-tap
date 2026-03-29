@@ -5,21 +5,21 @@
 class Mcpx < Formula
   desc "MCP servers as CLI tools — built for AI agents"
   homepage "https://github.com/codestz/mcpx"
-  version "1.4.1"
+  version "1.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/codestz/mcpx/releases/download/v1.4.1/mcpx_1.4.1_darwin_amd64.tar.gz"
-      sha256 "db296e34705633efdddf7876631d8f587b92d68b65a74dab949a8fe3b98acb3a"
+      url "https://github.com/codestz/mcpx/releases/download/v1.5.0/mcpx_1.5.0_darwin_amd64.tar.gz"
+      sha256 "00d9e24ec7b5ce6f3b0e761e5448ebdb18869764397d26e74230ac5917efef47"
 
       define_method(:install) do
         bin.install "mcpx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/codestz/mcpx/releases/download/v1.4.1/mcpx_1.4.1_darwin_arm64.tar.gz"
-      sha256 "b215fd3e26b77c834aae71124cfcb85ed8d1ec066b7cdd62295c2db712a5ee33"
+      url "https://github.com/codestz/mcpx/releases/download/v1.5.0/mcpx_1.5.0_darwin_arm64.tar.gz"
+      sha256 "435060febd5fa958a4fd97b6a33b319ac01958d206ae9c251333c68b537bf983"
 
       define_method(:install) do
         bin.install "mcpx"
@@ -29,15 +29,15 @@ class Mcpx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codestz/mcpx/releases/download/v1.4.1/mcpx_1.4.1_linux_amd64.tar.gz"
-      sha256 "2493d8bd1f912791f45811773f7b9b640ace3bbfa9127cb12ea473e7ca2e6eee"
+      url "https://github.com/codestz/mcpx/releases/download/v1.5.0/mcpx_1.5.0_linux_amd64.tar.gz"
+      sha256 "d783a1c35be3d76dc60d329a3317e688f864068bec11be8aac217dca1aaee1e9"
       define_method(:install) do
         bin.install "mcpx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codestz/mcpx/releases/download/v1.4.1/mcpx_1.4.1_linux_arm64.tar.gz"
-      sha256 "70b2b5e8a2cefbd7e8a303234cbc0113d8c444810a05c4d982287be04fd9506c"
+      url "https://github.com/codestz/mcpx/releases/download/v1.5.0/mcpx_1.5.0_linux_arm64.tar.gz"
+      sha256 "bb3da3dcb303714217e740bc61dfc15ac4cc8acfbe07d21017d9216fca838b21"
       define_method(:install) do
         bin.install "mcpx"
       end
