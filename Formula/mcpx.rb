@@ -11,7 +11,7 @@ class Mcpx < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/codestz/mcpx/releases/download/v1.5.0/mcpx_1.5.0_darwin_amd64.tar.gz"
-      sha256 "00d9e24ec7b5ce6f3b0e761e5448ebdb18869764397d26e74230ac5917efef47"
+      sha256 "cecb577ff9f0c04d2f09217af7b564f202ff535e67f574f168a9e1c6366a0e4e"
 
       define_method(:install) do
         bin.install "mcpx"
@@ -19,7 +19,7 @@ class Mcpx < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/codestz/mcpx/releases/download/v1.5.0/mcpx_1.5.0_darwin_arm64.tar.gz"
-      sha256 "435060febd5fa958a4fd97b6a33b319ac01958d206ae9c251333c68b537bf983"
+      sha256 "85095d2f551b9013960b64dc133cf680db814c27c1e22b7482b78c347266e6c6"
 
       define_method(:install) do
         bin.install "mcpx"
@@ -30,14 +30,14 @@ class Mcpx < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/codestz/mcpx/releases/download/v1.5.0/mcpx_1.5.0_linux_amd64.tar.gz"
-      sha256 "d783a1c35be3d76dc60d329a3317e688f864068bec11be8aac217dca1aaee1e9"
+      sha256 "10f6bf3998e25b5a2816f180bc944bcb09099ca8a536340c2e43ae34b0a154d2"
       define_method(:install) do
         bin.install "mcpx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/codestz/mcpx/releases/download/v1.5.0/mcpx_1.5.0_linux_arm64.tar.gz"
-      sha256 "bb3da3dcb303714217e740bc61dfc15ac4cc8acfbe07d21017d9216fca838b21"
+      sha256 "d688845ceac0119b0fb69684b6a75ea23292534d742fa5dd6201f9c39cbd020f"
       define_method(:install) do
         bin.install "mcpx"
       end
